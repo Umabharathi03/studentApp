@@ -1,4 +1,1 @@
 # studentApp
-
-
-kzndczl.cmA:c
