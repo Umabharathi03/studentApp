@@ -8,7 +8,7 @@ window.onload = loadData;
 
 function loadData()
 {
-    console.log("Inside loadData");
+    
     setInterval(loadDataFromDB, 2000);
    
 }
@@ -24,7 +24,6 @@ async function loadDataFromDB()
 
   });
  
-  //console.log(myArray);
  addAllItemsToTable(myArray);
  
 }
