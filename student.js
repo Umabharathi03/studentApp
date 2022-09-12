@@ -21,13 +21,11 @@ function saveDataOnSubmit (event)
  
  let clss=document.getElementById("cls").value;
  let gen=document.getElementById("gen").value; 
- //console.log("saveDataOnSubmit"+sname);
+
  saveDataToDB ( sname,rollno,sec,clss,gen);
  
 
-   /*
-  alert ("saveDataOnSubmit");
-  */
+  
  
 }
 
@@ -73,7 +71,7 @@ async function saveDataToDB(stName,rollNo,stuSec,stuClass,stuGen)
       */
   
     }
-
+    /*
      async function loadDataFromDB()
     {
       
@@ -136,21 +134,6 @@ async function saveDataToDB(stName,rollNo,stuSec,stuClass,stuGen)
 
         tblBody.appendChild(trow);
  }
+ */
 
-/*
- async function getData()
- {
-  
-    console.log("Inside getData");
-      const getRef = doc(db, "students",rollNo);
-      console.log("display");
-      const docSnap = await getDoc(getRef);
 
-      if (docSnap.exists()) {
-        console.log("Document data:", docSnap.data());
-      } else {
-        // doc.data() will be undefined in this case
-        console.log("No such document!");
-      }
-}
-*/
