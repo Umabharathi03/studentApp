@@ -23,7 +23,7 @@ async function loadDataFromDB()
    myArray.push(doc.data());
 
   });
-  //console.log(querySnapshot);
+ 
   //console.log(myArray);
  addAllItemsToTable(myArray);
  
@@ -76,14 +76,3 @@ function addRowToTable(slNo,name,rollNo,sec,cls,gen)
 }
   
 
-let button=document.getElementById("btn");
-button.addEventListener('button',upDate);
-async function upDate(){
-
-let studRef= doc(db, "students", AA06);
-
-
-await updateDoc(studRef, {
-     section:F
-});
-}
